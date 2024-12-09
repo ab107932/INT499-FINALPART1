@@ -1,0 +1,91 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: #333; /* Dark background for the navbar */
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-link {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0 20px;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 4px; /* Round corners on hover */
+}
+
+.navbar-link:hover {
+  color: #fff;
+  background-color: #f39c12; /* Golden color on hover */
+}
+
+.navbar-button {
+  background-color: #f39c12; /* Golden button color */
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-button:hover {
+  background-color: #e67e22; /* Darker golden shade on hover */
+}
+
+.navbar-button.logout {
+  background-color: #e74c3c; /* Red logout button */
+}
+
+.navbar-button.logout:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-link {
+    margin: 10px 0;
+  }
+
+  .navbar-button {
+    width: 100%;
+  }
+}

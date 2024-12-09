@@ -1,0 +1,46 @@
+/* src/components/Subscription.css */
+.subscription {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscription-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.subscription-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.subscription-item h3 {
+  font-size: 1.2rem;
+}
+
+.subscription-item p {
+  font-size: 1rem;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.warning {
+  color: red;
+  font-size: 1rem;
+}
